@@ -1,59 +1,67 @@
-# LoginPanel
+# Angular Project - Light/Dark Theme, Notifications, Loader, and i18n
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+This is an Angular project that demonstrates the following features:
 
-## Development server
+- **Light/Dark Theme**: Dynamic switching between light and dark themes.
+- **Notifications**: Global notification system with success and error messages.
+- **Loader**: Global loading spinner for long-running operations.
+- **Internationalization (i18n)**: Support for multiple languages (Polish and English).
+- **Deferrable Views**: Dynamic loading of components using Angular's `@defer`.
 
-To start a local development server, run:
+## Features
+
+### 1. Light/Dark Theme
+
+- The application supports both light and dark themes.
+- The theme can be toggled using a button in the UI.
+- The theme is applied globally using CSS variables.
+
+### 2. Notifications
+
+- Notifications are displayed globally and disappear automatically after 10 seconds.
+- Notifications can be manually dismissed by clicking the close button.
+- Supports success and error notifications.
+
+### 3. Loader
+
+- A global loading spinner is displayed during long-running operations (e.g., login, logout).
+- The loader is dynamically loaded using Angular's `@defer`.
+
+### 4. Internationalization (i18n)
+
+- The application supports two languages: Polish (`pl`) and English (`en`).
+- The language can be changed using a dropdown in the UI.
+- Translations are loaded from JSON files located in `assets/i18n/`.
+
+### 5. Deferrable Views
+
+- Components like notifications and loader are dynamically loaded using Angular's `@defer`.
+- This improves performance by loading components only when needed.
+
+## Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+
+   ```
+
+2. **Install dependencies**:
+
+```bash
+  npm install
+```
+
+3.**Run the application:**
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+4.**Open the application:**
 
 ```bash
-ng generate component component-name
+Visit http://localhost:4200 in your browser.
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
