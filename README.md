@@ -31,7 +31,7 @@ This is an Angular project that demonstrates the following features:
 
 - The application supports two languages: Polish (`pl`) and English (`en`).
 - The language can be changed using a dropdown in the UI.
-- Translations are loaded from JSON files located in `assets/i18n/`.
+- Translations are loaded from JSON files located in `assets/translation/`.
 
 ### 5. Deferrable Views
 
