@@ -1,0 +1,23 @@
+{
+  "hello": "cze12213ść",
+  "email": "E-mail",
+  "password": "Hasło",
+  "experience": "Doświadczenie",
+  "name": "Imie",
+  "age": " Wiek",
+  "login": "Zaloguj",
+  "logout": "Wyloguj",
+  "noUserData": "Brak danych urzytkownika",
+  "darkMode": "Tryb ciemny",
+  "lightMode": "Tryb jasny",
+  "VALIDATION_ERROR": {
+    "required": "To pole jest wymagane",
+    "email": "To pole musi być adresem e-mail",
+    "minlength": "To pole musi mieć co najmniej 3 znaków"
+  },
+  "NOTIFICATION": {
+    "loginSuccess": "Zalogowano pomyślnie!",
+    "logoutSuccess": "Wylogowano pomyślnie",
+    "noAuthAccess": "Brak dostepu dla nie zalogowanych urzytkowników!"
+  }
+}

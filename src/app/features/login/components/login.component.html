@@ -1,0 +1,9 @@
+<div class="container">
+  <app-bar />
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="container__form">
+    <app-input-text [control]="form.controls.email" [placeholder]="'email'"></app-input-text>
+    <app-input-text [control]="form.controls.password" [placeholder]="'password'"></app-input-text>
+    <app-basic-button [label]="'login'" />
+  </form>
+  <div class="container__image"></div>
+</div>

@@ -3,6 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./src/",
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
@@ -16,12 +17,22 @@
     "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
-    "module": "ES2022"
+    "module": "ES2022",
+    "paths": {
+      "@feature/home": ["app/features/home/index.ts"],
+      "@feature/login": ["app/features/login/index.ts"],
+      "@feature/register": ["src/app/feature/register"],
+      "@shared/util": ["app/shared/util/index.ts"],
+      "@shared/ui": ["app/shared/ui/index.ts"],
+      "@core/services": ["app/core/services/index.ts"],
+      "@core/guards": ["app/core/guards/index.ts"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "include": ["src/**/*"]
 }

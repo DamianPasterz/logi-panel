@@ -1,0 +1,25 @@
+{
+  "hello": "cze12213ść",
+  "email": "E-mail",
+  "password": "Password",
+  "experience": "Experience",
+  "name": "Name",
+  "age": " Age",
+  "login": "Log in",
+  "logout": "Log out",
+  "noUserData": "No user data",
+  "darkMode": "Dark mode",
+  "lightMode": "Light Mode",
+  "pl": "PL",
+  "en": "EN",
+  "VALIDATION_ERROR": {
+    "required": "This field is required",
+    "email": "This field must be an email address",
+    "minlength": "This field must be at least 3 characters long"
+  },
+  "NOTIFICATION": {
+    "loginSuccess": "Successfully logged in!",
+    "logoutSuccess": "Successfully logged out",
+    "noAuthAccess": "No access for non-logged-in users!"
+  }
+}

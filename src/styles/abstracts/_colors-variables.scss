@@ -1,0 +1,24 @@
+:root {
+  --primary-bg: #dee7ff;
+  --secondary-bg: linear-gradient(90deg, #ff8100 30%, #f1e00e 90%);
+  --font-color: #323232;
+  --row-bg: rgb(220, 225, 229);
+  --row-hover-bg: rgb(201, 209, 216);
+  --profit-positive: rgb(60, 193, 149);
+  --profit-negative: rgb(249, 76, 76);
+  --shadow-color: #323232;
+  --shadow: 4px 4px var(--shadow-color);
+  --basic-blue: #2d8cf0;
+  --basic-white: #fff;
+  --font-color-sub: #666;
+}
+
+[data-theme='dark'] {
+  --primary-bg: #181b24;
+  --secondary-bg: linear-gradient(90deg, #cc6600 30%, #b3a00b 90%);
+  --primary-text: rgb(198, 210, 219);
+  --row-bg: rgba(14, 15, 26, 0.25);
+  --row-hover-bg: rgba(53, 71, 89, 0.5);
+  --profit-positive: rgb(60, 193, 149);
+  --profit-negative: rgb(249, 76, 76);
+}

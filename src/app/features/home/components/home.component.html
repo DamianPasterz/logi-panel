@@ -1,0 +1,24 @@
+@if (userDto()) {
+  <div class="container">
+    <app-bar />
+    <form [formGroup]="form" class="container__form">
+      <div class="container__form__box">
+        <p class="container__form__box__label">{{ 'name' | translate }}</p>
+        <app-input-text [control]="form.controls.name" [placeholder]="'name'"></app-input-text>
+        <p class="container__form__box__label">{{ 'email' | translate }}</p>
+        <app-input-text [control]="form.controls.email" [placeholder]="'email'"></app-input-text>
+        <p class="container__form__box__label">{{ 'age' | translate }}</p>
+        <app-input-text [control]="form.controls.age" [placeholder]="'age'"></app-input-text>
+        <p class="container__form__box__label">{{ 'experience' | translate }}</p>
+        <app-input-text [control]="form.controls.exp" [placeholder]="'exp'"></app-input-text>
+      </div>
+    </form>
+    <div class="container__another">
+      <app-basic-button [label]="'logout'" (click)="onLogout()" />
+    </div>
+  </div>
+} @else {
+  <div class="container">
+    <p>{{ 'noUserData' | translate }}</p>
+  </div>
+}

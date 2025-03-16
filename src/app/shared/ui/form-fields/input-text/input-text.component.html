@@ -1,0 +1,7 @@
+<div class="input-group">
+  <input type="text" [formControl]="control()" [placeholder]="placeholder() | translate" name="text" class="input" />
+
+  @if (control().invalid && (control().dirty || control().touched)) {
+    <small>{{ errorMessage() }}</small>
+  }
+</div>

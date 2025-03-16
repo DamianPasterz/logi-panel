@@ -1,0 +1,12 @@
+<div class="bar_container">
+  <div class="bar_container__language">
+    <p>{{ 'pl' | translate }}</p>
+    <app-basic-toggle-switch [control]="changeLanguage" />
+    <p>{{ 'en' | translate }}</p>
+  </div>
+  <div class="bar_container__theme">
+    <p>{{ 'lightMode' | translate }}</p>
+    <app-basic-toggle-switch [control]="darkModeSwitch" />
+    <p>{{ 'darkMode' | translate }}</p>
+  </div>
+</div>

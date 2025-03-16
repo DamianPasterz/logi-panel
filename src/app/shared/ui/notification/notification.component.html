@@ -1,0 +1,4 @@
+<div class="notification" [ngClass]="notification().type">
+  {{ notification().message | translate }}
+  <button (click)="closeNotification()" class="close-button">×</button>
+</div>
