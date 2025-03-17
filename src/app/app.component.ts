@@ -2,7 +2,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Inject, inject, Renderer2 } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoadingService, NotificationService } from '@core/services';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateService, TranslateStore } from '@ngx-translate/core';
 import { LoadingComponent } from './shared/ui/elements/loading/loading.component';
 import { NotificationComponent } from './shared/ui/notification/notification.component';
 
@@ -11,6 +11,8 @@ import { NotificationComponent } from './shared/ui/notification/notification.com
   imports: [RouterOutlet, TranslateModule, LoadingComponent, NotificationComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  standalone: true,
+  providers: [LoadingService, NotificationService, TranslateService, TranslateStore],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
@@ -18,7 +20,7 @@ export class AppComponent {
   protected readonly loadingService = inject(LoadingService);
 
   constructor(
-    private translate: TranslateService,
+    public translate: TranslateService,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document
   ) {

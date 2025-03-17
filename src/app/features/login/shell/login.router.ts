@@ -1,4 +1,3 @@
-// components/home/home.routes.ts
 import { Routes } from '@angular/router';
 
 export const LOGIN_ROUTES: Routes = [

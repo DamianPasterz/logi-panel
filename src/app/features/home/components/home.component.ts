@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, effect, inject } from '@angular/core';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -23,7 +23,7 @@ import { map } from 'rxjs';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   standalone: true,
-  providers: [HomeFacade],
+  providers: [HomeFacade, TranslateService, TranslateModule],
 })
 export class HomeComponent {
   private homeFacade = inject(HomeFacade);

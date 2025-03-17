@@ -34,8 +34,6 @@ export class InputTextComponent {
 
     if (errors) {
       const errorKey = Object.keys(errors)[0];
-      console.log('errorKey', errorKey);
-
       this.errorKey.set(errorKey);
     } else {
       this.errorKey.set('');

@@ -1,14 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { BasicButtonComponent, InputTextComponent } from '@shared/ui';
+import { LoginFacade } from '@feature/login';
+import { BarComponent, BasicButtonComponent, InputPasswordComponent, InputTextComponent } from '@shared/ui';
 import { CustomValidators } from '@shared/util';
-import { BarComponent } from '../../../shared/ui/elements/bar/bar.component';
-import { LoginFacade } from '../logic';
 
 @Component({
   selector: 'app-login',
-  imports: [InputTextComponent, BasicButtonComponent, FormsModule, ReactiveFormsModule, CommonModule, BarComponent],
+  imports: [
+    InputTextComponent,
+    BasicButtonComponent,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule,
+    BarComponent,
+    InputPasswordComponent,
+  ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
   standalone: true,

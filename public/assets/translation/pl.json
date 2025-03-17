@@ -10,6 +10,8 @@
   "noUserData": "Brak danych urzytkownika",
   "darkMode": "Tryb ciemny",
   "lightMode": "Tryb jasny",
+  "pl": "PL",
+  "en": "EN",
   "VALIDATION_ERROR": {
     "required": "To pole jest wymagane",
     "email": "To pole musi być adresem e-mail",

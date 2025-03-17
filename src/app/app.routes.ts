@@ -12,5 +12,5 @@ export const routes: Routes = [
     canActivate: [AuthGuard],
     loadChildren: () => import('@feature/home').then((m) => m.HOME_ROUTES),
   },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', redirectTo: 'login' },
 ];
